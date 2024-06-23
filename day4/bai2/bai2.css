@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+image {
+    width: 100vh;
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://cdn.pixabay.com/photo/2013/01/13/08/15/beach-74753_1280.jpg");
+
+    form {
+
+        border-radius: 15px;
+        width: 70%;
+        height: 60%;
+
+        .container {
+
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+
+            .left {
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+                background-image: url("https://img.freepik.com/free-photo/close-up-adorable-kitten-indoors_23-2150782415.jpg");
+            }
+
+            .right {
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding: 40px;
+                background-color: black;
+                opacity: 0.7;
+
+
+                .input-group {
+                    position: relative;
+
+                    input {
+                        margin-top: 5px;
+                        width: 100%;
+                        padding: 15px;
+                        border-radius: 20px;
+                        border: 1px solid white;
+                    }
+
+                    i {
+                        position: absolute;
+                        background-color: white;
+                        right: 15px;
+                        top: 38px;
+                        font-size: 20px;
+                    }
+                }
+
+                .button {
+                    margin-top: 20px;
+                    width: 100%;
+                    padding: 15px;
+                    border-radius: 20px;
+                    border: 1px solid blue;
+                    color: white;
+                    background-color: blue;
+
+                    &:hover {
+                        background-color: white;
+                        color: blue;
+
+                    }
+                }
+
+                p {
+                    margin-top: 10px;
+                    text-align: center;
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                    color: white;
+
+                }
+                .button-group {
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: space-around;
+
+                    button {
+                        width: 15%;
+                        padding: 5px;
+                        border-radius: 5px;
+                        background-color: rebeccapurple;
+                        
+                        &:hover {
+                            background-color: blue;
+                            border: 1px solid blue;
+                        }
+                    }
+                }
+
+                hr {
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
